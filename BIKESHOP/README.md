@@ -29,21 +29,21 @@ This project features an interactive Bash terminal application that manages a bi
 1. Database Initialization
 
 Create the database and import the schema using the provided SQL file:
-Bash
-
+<pre>
 # Create the database
 psql --username=postgres -c "CREATE DATABASE bikes;"
 
 # Reconstruct the schema and data
 psql --username=postgres --dbname=bikes < bikes.sql
-
+</pre>
+    
 2. Run the Application
 
 Ensure the script has execution permissions and launch it:
 Bash
-
-chmod +x bike-shop.sh
+<pre>chmod +x bike-shop.sh
 ./bike-shop.sh
+</pre>
 
 📊 Database Schema
 
